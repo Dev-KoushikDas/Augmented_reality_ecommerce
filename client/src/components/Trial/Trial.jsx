@@ -11,6 +11,8 @@ const[open,setOpen]=useState(true);
 const inputRef = useRef(null);
 
 const toast = useToast();
+
+// FUNCTION 
 function setstate() {
 setOpen(false);
 }
@@ -18,7 +20,7 @@ setOpen(false);
 const uploadFileApiCall = async(file) => {
     try{
         const formData = new FormData();
-        formData.append("myfile" , file);
+        formData.append("myfile",file);
         const res = await axios.post(`https://file-share-rest-api.vercel.app/api/files`,
         formData
         )
