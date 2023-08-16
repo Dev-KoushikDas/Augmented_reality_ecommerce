@@ -17,6 +17,7 @@ function setstate() {
 setOpen(false);
 }
 
+
 const uploadFileApiCall = async(file) => {
     try{
         const formData = new FormData();

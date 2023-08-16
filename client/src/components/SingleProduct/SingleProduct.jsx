@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Context } from "../../utils/context";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import {
@@ -44,6 +44,8 @@ const SingleProduct = () => {
 
     const cat = product.categories.data[0].attributes
     .title;
+
+    const navigate = useNavigate();
     return (
         <>
         <div className="single-product-main-content">
@@ -76,7 +78,8 @@ const SingleProduct = () => {
                         ):(
                         <button
                         className="add-to-cart"
-                        onClick={() => settrialModal(true)}
+                       // onClick={() => settrialModal(true)}
+                        onClick={navigate("/")}
                         >
                         <FaCube size={20} />
                         PHOTO TRIAL
