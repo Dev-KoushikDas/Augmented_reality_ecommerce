@@ -1,0 +1,46 @@
+#card2 {
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0,0.25);
+    overflow: hidden;
+
+    position: fixed;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    z-index: 999;
+    top:0;
+    
+    background-color: white;
+
+  }
+input{
+padding:10px;
+margin-bottom:20px;
+}
+.image{
+border: 3px solid  #f89a9a;
+margin-bottom: 20px;
+}
+.image>img{
+max-width:350px;
+}
+button{
+   
+        outline: 0;
+        border: 0;
+        height: 35px;
+        width: 145px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(248, 154, 154);
+        border:3px solid rgb(248, 154, 154);
+            
+    
+}
